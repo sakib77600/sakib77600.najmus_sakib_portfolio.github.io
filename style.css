@@ -1,0 +1,214 @@
+/*==================================
+
+                    css index
+                   ===========
+                  1.Common Css
+                  2.Header section
+                  3.Site-Main 
+                  4. 
+                  5.
+                  6.
+                  7.
+                  8. 
+                  9.  
+
+==================================*/
+/*==================================
+                    common css
+==================================*/
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-border: #ffffff34;
+    --font-staat: 'Staatliches', cursive;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+
+/* global classes */
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bg-color {
+    background-color: #3C4043;
+}
+
+/* Header section */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    transition: left.5s ease;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+#header .text-title .navbar-brand {
+    letter-spacing: 2px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+#header .description {
+    color: #d4af37;
+    margin-left: -20px;
+} 
+
+.nav-link {
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #d4af37!important;
+}
+
+#header .toggle-button {
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+
+.toggle-left {
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* Site-Main */
+
+.site-banner .banner-area {
+    background: url(assets/hero.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.author {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.author-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(assets/me2.jpg) no-repeat;
+    background-size: 120%;
+    background-position: 60% 0;
+}
+
+
+.site-banner span {
+    color: #d4af37;
+}
+
+.progress-bar {
+    background-color: #d4af37;
+}
+
+.btn-bg {
+    background-color: #d4af37;
+}
+
+.bar-1 .font-ram {
+    line-height: 10px;
+}
+
+
+/* Site-Main */
+
+.services-area .icon {
+    color: #d4af37;
+}
+
+
+.reference .img-1 {
+    height: 200px;
+}
+
+
+#portfolio .img-3 {
+    height: 200px;
+}
+
+#footer .footer-icon {
+    color: #d4af37;
+}
+
+
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+/* #site-main */
+
+
+
+
+
+
+
+
+
